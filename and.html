@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/fotos-premium/papeis-de-parede-roxos-da-galaxia-que-farao-voce-querer-ver-as-estrelas_916191-6275.jpg?w=740') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+        }
+        .header {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1024px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+        }
+        .header h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1a1a1a;
+            padding: 10px 0;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+        }
+        .section h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .section-table {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .section-table .item {
+            text-align: center;
+            background-color: #333;
+            border-radius: 8px;
+            padding: 20px;
+            width: 220px;
+        }
+        .section-table .item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .section-table .item p {
+            margin: 10px 0;
+        }
+        .section-multimedia {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .section-multimedia .description {
+            max-width: 50%;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 2px -2px gray;
+            margin-top: 20px;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background: #333;
+            border-radius: 8px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Explorando o Universo</h1>
+    </div>
+
+    <div class="nav">
+        <a href="#planetas">PLANETAS</a>
+        <a href="#estrelas">ESTRELAS</a>
+        <a href="#galaxias">GALÁXIAS</a>
+        <a href="#cosmologia">COSMOLOGIA</a>
+        <a href="cadastro.html">CADASTRO</a>
+        <a href="https://www.nasa.gov/" target="_blank">NOTÍCIAS</a>
+    </div>
+
+    <div class="content">
+        <h1>Astronomia</h1>
+        <p>
+            A astronomia é a ciência que estuda os corpos celestes e os fenômenos do universo. Desde a antiguidade, a humanidade observa o céu noturno e tenta compreender os mistérios do cosmos.
+        </p>
+        <p>
+            Com o avanço das tecnologias, como telescópios e sondas espaciais, conseguimos explorar o espaço profundo e revelar detalhes fascinantes sobre planetas, estrelas, galáxias e outros fenômenos astronômicos.
+        </p>
+        <div class="section" id="planetas">
+            <h2>Objetos Celestes - Planetas</h2>
+            <p>Os planetas são corpos celestes intrigantes do nosso sistema solar, destacando suas características únicas e importância para a astronomia:</p>
+            <ul>
+                <li>1 - Planetas rochosos</li>
+                <li>2 - Planetas gasosos</li>
+                <li>3 - Planetas anões</li>
+            </ul>
+        </div>
+
+        <div class="section" id="estrelas">
+            <h2>Objetos Celestes - Estrelas</h2>
+            <p>Estrelas são corpos celestes massivos que emitem luz e calor. Vamos explorar as diferentes categorias de estrelas e seus papéis importantes no universo:</p>
+            <ul>
+                <li>1 - Estrelas Anãs</li>
+                <li>2 - Estrelas Gigantes</li>
+                <li>3 - Estrelas Binárias</li>
+                <li>4 - Supernovas</li>
+                <li>5 - Estrelas de Nêutrons</li>
+            </ul>
+        </div>
+
+        <div class="section" id="galaxias">
+            <h2>Objetos Celestes - Galáxias</h2>
+            <p>Galáxias são vastos sistemas de estrelas, gás e poeira unidos pela gravidade. Nesta seção, exploramos as principais galáxias conhecidas:</p>
+            <ul>
+                <li>1 - Via Láctea</li>
+                <li>2 - Andrômeda</li>
+                <li>3 - Galáxia do Triângulo</li>
+                <li>4 - Galáxias Elípticas</li>
+                <li>5 - Galáxias Espirais</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Exploração Espacial</h2>
+            <p>A exploração espacial tem proporcionado descobertas revolucionárias. Veja alguns marcos significativos na história da exploração do espaço:</p>
+            <div class="section-table">
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Sputnik_asm.jpg" alt="Sputnik 1">
+                    <p><strong>Sputnik 1</strong></p>
+                    <p>O primeiro satélite artificial da Terra, lançado pela União Soviética em 1957. Este marco histórico marcou o início da exploração espacial.</p>
+                </div>
+                <div class="item">
+                    <img src="https://www.showmetech.com.br/wp-content/uploads//2019/07/earth-apollo11-showmetech-2-1920x1024.jpg" alt="Apollo 11">
+                    <p><strong>Apollo 11</strong></p>
+                    <p>Missão da NASA que levou o primeiro homem à Lua em 1969. A missão representou um grande avanço na exploração lunar e na conquista espacial.</p>
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Voyager.jpg" alt="Voyager 1">
+                    <p><strong>Voyager 1</strong></p>
+                    <p>Sonda lançada em 1977 que continua a explorar o espaço interestelar, fornecendo dados valiosos sobre o ambiente fora do nosso sistema solar.</p>
+                </div>
+                <div class="item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HST-SM4.jpeg/800px-HST-SM4.jpeg" alt="Hubble">
+                    <p><strong>Hubble</strong></p>
+                    <p>Telescópio espacial lançado em 1990 que revolucionou a astronomia com suas imagens de alta resolução e descobertas sobre o cosmos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-multimedia" id="cosmologia">
+            <div class="description">
+                <h2>Multimídia Astronômica</h2>
+                <p>Explore vídeos e áudios fascinantes sobre o cosmos. Descubra as imagens e sons capturados por sondas e telescópios, oferecendo uma visão única do espaço:</p>
+                <p>
+                    <label>contatos:</label><br/>
+                    <a href="https://instagram.com" target="_blank">@andrezao_o</a><br/>
+                    <a href="mailto:andre.lima@undf.edu.br">andre.lima@undf.edu.br</a>
+                </p>
+            </div>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/kyxxBAQjx2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Explorando o Universo. Todos os direitos reservados.
+        </br>Andre Luan - 2024</p>
+    </div>
+
+</body>
+</html>
